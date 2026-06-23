@@ -40,48 +40,45 @@ export default function TheBook() {
     >
       <div className="absolute top-0 w-full h-1/2 bg-gradient-to-b from-theme-salmon-light/30 to-transparent" />
       
-      <div className="w-full md:w-1/2 flex flex-col items-center justify-center relative z-10 perspective-[1000px] mb-16 md:mb-0">
-        {/* Livro Placeholder */}
-        <div 
-          ref={bookRef}
-          className="relative w-[280px] h-[400px] md:w-[320px] md:h-[460px] bg-theme-salmon rounded-r-xl rounded-l-sm shadow-2xl overflow-hidden flex flex-col items-center justify-center border-l-8 border-theme-brown/20 transform-style-3d rotate-y-[-10deg]"
-        >
-          <div className="absolute top-8 left-0 w-full text-center">
-            <h3 className="font-serif text-3xl text-theme-brown font-bold tracking-widest uppercase">Sou<br/>Amada</h3>
-            <div className="w-12 h-px bg-theme-brown mx-auto mt-4" />
-          </div>
-          <div className="absolute bottom-8 left-0 w-full text-center">
-            <p className="font-sans text-sm text-theme-brown/80 tracking-widest uppercase">Amanda Sena</p>
-          </div>
-        </div>
-        
-        {/* Sombra Dinâmica Realista */}
-        <div 
-          ref={shadowRef}
-          className="w-[240px] md:w-[280px] h-[20px] bg-black/40 blur-xl rounded-[100%] mt-8 mx-auto"
-        />
+      {/* Background Decorativo - Logo MARROM.png bem suave */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5 pointer-events-none select-none -z-10">
+        <img src="/MARROM.png" alt="Logo Sou Amada" className="w-[40vw] max-w-[600px] grayscale object-contain" />
       </div>
 
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pl-16 z-10">
+      <div className="w-full md:w-1/2 flex justify-center mb-16 md:mb-0 relative z-10">
+        <div ref={bookRef} className="relative w-64 h-96 md:w-80 md:h-[480px]">
+          {/* Sombra Dinâmica */}
+          <div ref={shadowRef} className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-theme-brown/20 blur-xl rounded-[100%]" />
+          
+          <div className="absolute inset-0 bg-theme-brown rounded-r-2xl rounded-l-sm shadow-2xl overflow-hidden flex flex-col items-center justify-center p-6 text-center border-l-4 border-theme-salmon-light/30">
+            <span className="text-theme-salmon-light/80 font-serif italic text-sm mb-4">Amanda Sena</span>
+            <h3 className="font-serif text-3xl text-theme-base font-light tracking-wider">Sou<br/>Amada</h3>
+            <div className="w-8 h-px bg-theme-salmon mt-6" />
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start z-10">
+        <span className="text-theme-earth font-sans text-sm tracking-widest uppercase mb-4">
+          O Livro
+        </span>
         <h2 className="font-serif text-4xl md:text-5xl text-theme-brown mb-6 text-balance">
           Sua jornada para a cura começa aqui.
         </h2>
-        <p className="text-theme-brown/70 font-sans text-lg mb-10 leading-relaxed font-light">
+        <p className="text-theme-brown/70 font-sans text-xl mb-10 leading-relaxed font-light">
           Este não é apenas um livro, é um convite para você descobrir sua verdadeira identidade. Através do meu testemunho, quero que você saiba — sem depender dos seus sentimentos — que você é profundamente amada.
         </p>
 
-        <ul className="space-y-4 mb-12">
-          {['Restauração da auto-imagem.', 'Cura de feridas emocionais profundas.', 'Descoberta do propósito no meio da dor.'].map((item, i) => (
-            <li key={i} className="flex items-start gap-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-theme-salmon mt-2.5 flex-shrink-0" />
-              <span className="font-sans text-theme-brown/80 text-lg">{item}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="bg-theme-salmon/10 border-l-4 border-theme-salmon p-6 mb-12 rounded-r-2xl">
+          <span className="block text-theme-brown font-semibold mb-2 font-sans">Para quem é este livro?</span>
+          <p className="text-theme-brown/80 font-sans text-lg leading-relaxed font-light">
+            Mulheres maduras, mães, tentantes ou que sofreram com a dor da inferioridade e precisam resgatar sua identidade de filha amada.
+          </p>
+        </div>
 
         <button
           onClick={openModal}
-          className="group flex items-center gap-3 rounded-full bg-theme-brown px-8 py-4 text-lg text-theme-base shadow-xl shadow-theme-brown/20 transition-all hover:bg-theme-brown/90 hover:-translate-y-1"
+          className="group flex items-center gap-3 rounded-full bg-theme-brown px-8 py-4 text-lg text-theme-base shadow-xl shadow-theme-brown/20 transition-all hover:bg-theme-brown/90 hover:-translate-y-1 cursor-pointer"
         >
           Quero ler o Livro
           <MoveRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

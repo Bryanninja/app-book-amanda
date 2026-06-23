@@ -58,16 +58,16 @@ export default function CheckoutModal() {
       >
         <button
           onClick={closeModal}
-          className="absolute right-4 top-4 rounded-full p-2 text-neutral-400 transition-colors hover:bg-neutral-100 hover:text-theme-brown"
+          className="absolute right-4 top-4 rounded-full p-2 text-neutral-400 transition-colors hover:bg-neutral-100 hover:text-theme-brown cursor-pointer"
         >
           <X className="h-5 w-5" />
         </button>
 
         <div className="mb-8 text-center">
-          <h2 className="font-serif text-2xl text-theme-brown">
+          <h2 className="font-serif text-3xl text-theme-brown">
             {!selectedCountry ? "Onde você está?" : "Escolha a forma de entrega"}
           </h2>
-          <p className="mt-2 text-sm text-neutral-500 font-sans">
+          <p className="mt-2 text-base text-neutral-500 font-sans">
             {!selectedCountry
               ? "Selecione seu país para ver as opções disponíveis."
               : "Opções personalizadas para sua região."}
@@ -85,11 +85,11 @@ export default function CheckoutModal() {
               <button
                 key={country.id}
                 onClick={() => setCountry(country.id as any)}
-                className="flex items-center justify-between rounded-xl border border-neutral-200 bg-theme-base/50 p-4 transition-all hover:border-theme-salmon hover:bg-theme-salmon/10 active:scale-[0.98]"
+                className="flex items-center justify-between rounded-xl border border-neutral-200 bg-theme-base/50 p-4 transition-all hover:border-theme-salmon hover:bg-theme-salmon/10 active:scale-[0.98] cursor-pointer"
               >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{country.flag}</span>
-                  <span className="font-medium text-theme-brown">{country.name}</span>
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl">{country.flag}</span>
+                  <span className="font-medium text-theme-brown text-lg">{country.name}</span>
                 </div>
                 <MapPin className="h-5 w-5 text-neutral-300" />
               </button>
@@ -137,7 +137,7 @@ export default function CheckoutModal() {
                 <OptionButton
                   icon={<Smartphone />}
                   title="Transferência / M-Pesa"
-                  subtitle="Falar no WhatsApp"
+                  subtitle="Pix/M-Pesa (Atendimento WhatsApp)"
                   href="#"
                   variant="outline"
                 />
@@ -146,7 +146,7 @@ export default function CheckoutModal() {
 
             <button
               onClick={() => setCountry(null)}
-              className="mt-6 w-full text-center text-sm font-medium text-neutral-400 hover:text-theme-brown transition-colors"
+              className="mt-6 w-full text-center text-sm font-medium text-neutral-400 hover:text-theme-brown transition-colors cursor-pointer"
             >
               ← Voltar para seleção de país
             </button>
@@ -175,7 +175,7 @@ function OptionButton({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex items-center gap-4 rounded-xl p-4 transition-all active:scale-[0.98] ${
+      className={`flex items-center gap-4 rounded-xl p-4 transition-all active:scale-[0.98] cursor-pointer ${
         variant === "primary"
           ? "bg-theme-brown text-white hover:bg-theme-brown/90 shadow-lg shadow-theme-brown/20"
           : "border-2 border-theme-brown text-theme-brown hover:bg-theme-brown/5"
@@ -185,8 +185,8 @@ function OptionButton({
         {icon}
       </div>
       <div className="flex flex-col text-left">
-        <span className="font-semibold">{title}</span>
-        <span className={`text-xs ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
+        <span className="font-semibold text-lg">{title}</span>
+        <span className={`text-sm ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
           {subtitle}
         </span>
       </div>

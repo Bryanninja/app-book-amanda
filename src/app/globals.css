@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-theme-base: #FAFAFA; /* Off-white/beige suave */
-  --color-theme-salmon: #FFBBA2;
-  --color-theme-salmon-light: #FFDACB;
-  --color-theme-brown: #3A2A20; /* Texto escuro */
-  --color-theme-earth: #8B5A2B; /* Toque terroso */
+  --color-theme-base: #FEFCF8; /* Creme/off-white aquarelado */
+  --color-theme-salmon: #F4A48B; /* Rosa Salmão Pastel */
+  --color-theme-salmon-light: #FAD1C4; /* Versão clareada do salmão */
+  --color-theme-brown: #593E2E; /* Marrom Terroso Escuro (África) */
+  --color-theme-earth: #8C6A54; /* Marrom suave */
   
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
