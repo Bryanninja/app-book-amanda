@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-base: #FAFAFA; /* Off-white/beige suave */
+  --color-theme-salmon: #FFBBA2;
+  --color-theme-salmon-light: #FFDACB;
+  --color-theme-brown: #3A2A20; /* Texto escuro */
+  --color-theme-earth: #8B5A2B; /* Toque terroso */
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+html, body {
+  @apply bg-theme-base text-theme-brown font-sans;
+  scroll-behavior: auto; /* Deixamos pro Lenis cuidar */
+}
+
+/* Utilitários Extras para Tipografia Premium */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
