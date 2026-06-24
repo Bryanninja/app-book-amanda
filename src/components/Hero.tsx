@@ -10,7 +10,17 @@ export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const { openModal } = useCheckoutStore();
+
+  useEffect(() => {
+    // Força o vídeo a tocar no mobile (safari/ios) ignorando bugs de autoplay
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        console.log("Autoplay blocked by browser (Low Power Mode).");
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -87,11 +97,13 @@ export default function Hero() {
       {/* Background de Vídeo (O arquivo original 0623.mp4 será colocado na pasta public) */}
       <div className="absolute inset-0 z-0 h-full w-full">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          className="h-full w-full object-cover"
+          poster="/photos/amanda-arch.webp"
+          className="h-full w-full object-cover opacity-80"
         >
           <source src="/videos/amanda-book-hero.mp4" type="video/mp4" />
         </video>
