@@ -81,6 +81,7 @@ export default function CheckoutModal() {
               { id: "PT", name: "Portugal", flag: "🇵🇹" },
               { id: "MZ", name: "Moçambique", flag: "🇲🇿" },
               { id: "AO", name: "Angola", flag: "🇦🇴" },
+              { id: "OTHER", name: "Outros Países", flag: "🌍" },
             ].map((country) => (
               <button
                 key={country.id}
@@ -115,7 +116,7 @@ export default function CheckoutModal() {
               </div>
             )}
 
-            {selectedCountry === "PT" && (
+            {(selectedCountry === "PT" || selectedCountry === "OTHER") && (
               <div className="flex flex-col gap-3">
                 <OptionButton
                   icon={<Smartphone />}

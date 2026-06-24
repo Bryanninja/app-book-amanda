@@ -16,6 +16,11 @@ const inter = Inter({
 export const metadata = {
   title: "Sou Amada | Amanda Sena",
   description: "A jornada transformadora de Amanda Sena através da dor, da adoção e de um chamado improvável para a África. Descubra o amor que cura de dentro para fora.",
+  keywords: ["Amanda Sena", "Sou Amada", "Livro cristão", "Testemunho", "Endometriose", "Adoção", "África", "Fé", "Feminilidade", "Milagre"],
+  authors: [{ name: "Amanda Sena" }],
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: "Sou Amada | Amanda Sena",
     description: "A jornada transformadora de Amanda Sena através da dor, da adoção e de um chamado improvável para a África.",
@@ -26,6 +31,7 @@ export const metadata = {
         url: "/og-image.jpg", // Placeholder para a imagem OG
         width: 1200,
         height: 630,
+        alt: "Capa do Livro Sou Amada",
       },
     ],
     locale: "pt_BR",
@@ -35,6 +41,10 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sou Amada | Amanda Sena",
     description: "Descubra o amor que cura de dentro para fora.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
