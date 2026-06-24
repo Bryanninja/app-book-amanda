@@ -35,16 +35,13 @@ export default function Transformation() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Coluna 1: A Ilusão do Mundo (Dores) */}
-            <div className="bg-white border border-red-900/10 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden group">
-              {/* Efeito de background sutil */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-80" />
-              
+            <div className="bg-neutral-50/50 border border-neutral-200 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden group">
               <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-                    <X className="w-6 h-6 text-red-500" />
+                <div className="flex items-center gap-4 mb-8 opacity-80">
+                  <div className="w-10 h-10 rounded-full bg-neutral-200 flex items-center justify-center flex-shrink-0">
+                    <X className="w-5 h-5 text-neutral-500" />
                   </div>
-                  <h3 className="font-serif text-2xl md:text-3xl text-theme-brown">A Ilusão do Mundo</h3>
+                  <h3 className="font-serif text-xl md:text-2xl text-theme-brown">A Ilusão do Mundo</h3>
                 </div>
 
                 <ul className="space-y-6">
@@ -54,9 +51,9 @@ export default function Transformation() {
                     "Diagnósticos médicos implacáveis, dores físicas severas e infertilidade.",
                     "O medo do desconhecido e a exaustão diante de grandes mudanças de vida.",
                   ].map((item, idx) => (
-                    <li key={idx} className="flex gap-4 items-start">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2.5 flex-shrink-0 shadow-sm" />
-                      <p className="text-theme-brown/90 font-sans text-lg font-light leading-relaxed">{item}</p>
+                    <li key={idx} className="flex gap-4 items-start opacity-85 transition-opacity duration-300 hover:opacity-100">
+                      <span className="w-1.5 h-1.5 rounded-full bg-neutral-300 mt-2.5 flex-shrink-0" />
+                      <p className="text-theme-brown/80 font-sans text-lg font-light leading-relaxed">{item}</p>
                     </li>
                   ))}
                 </ul>

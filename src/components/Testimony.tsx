@@ -93,7 +93,7 @@ export default function Testimony() {
         {/* Imagem 1: A Dor / Busca */}
         <div className="testimony-image relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-[0.5px] border-theme-brown/10">
           <div className="absolute inset-0 bg-neutral-100" />
-          <Image src="/photos/familia-arch.webp" alt="A Força da Família" fill quality={100} sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+          <Image src="/photos/familia-arch.webp" alt="A Força da Família" fill quality={100} sizes="(max-width: 768px) 100vw, 50vw" className="object-cover saturate-[0.85] sepia-[.15] contrast-[1.05]" />
           <div className="absolute inset-0 bg-gradient-to-t from-theme-brown/60 to-transparent flex items-end p-8">
              <p className="text-theme-base font-serif text-2xl italic tracking-wide">A força da família.</p>
           </div>
@@ -102,7 +102,7 @@ export default function Testimony() {
         {/* Imagem 2: A Família / Adoção */}
         <div className="testimony-image relative w-full aspect-square rounded-full overflow-hidden shadow-2xl mt-12 md:mt-32 md:-ml-12 border-[0.5px] border-theme-brown/10">
           <div className="absolute inset-0 bg-neutral-200" />
-          <Image src="/photos/abraco-moises.webp" alt="O Consolo no Vale" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+          <Image src="/photos/abraco-moises.webp" alt="O Consolo no Vale" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover saturate-[0.85] sepia-[.15] contrast-[1.05]" />
           <div className="absolute inset-0 bg-theme-brown/20 flex items-center justify-center p-8 text-center">
              <p className="text-theme-base font-serif text-2xl italic drop-shadow-md">O consolo no vale.</p>
           </div>
@@ -111,7 +111,7 @@ export default function Testimony() {
         {/* Imagem 3: Missão na África */}
         <div className="testimony-image relative w-full aspect-[4/5] rounded-[40px] rounded-tr-none overflow-hidden shadow-2xl mt-12 md:mt-32 border-[0.5px] border-theme-brown/10">
           <div className="absolute inset-0 bg-neutral-300" />
-          <Image src="/photos/table-mountain-frame.webp" alt="A África" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+          <Image src="/photos/table-mountain-frame.webp" alt="A África" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover saturate-[0.85] sepia-[.15] contrast-[1.05]" />
           <div className="absolute inset-0 bg-gradient-to-t from-theme-brown/70 to-transparent flex items-end p-8">
              <p className="text-theme-base font-serif text-2xl italic tracking-wide">A África e o florescer da alma.</p>
           </div>

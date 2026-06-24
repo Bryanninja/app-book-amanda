@@ -36,7 +36,7 @@ export default function Gallery() {
                   alt={photo.alt} 
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-all duration-700 group-hover:scale-105 saturate-[0.85] sepia-[.15] contrast-[1.05] brightness-[1.02] group-hover:saturate-100 group-hover:sepia-0"
                 />
               </div>
             </div>
