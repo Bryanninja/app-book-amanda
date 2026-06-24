@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-type Country = 'BR' | 'PT' | 'MZ' | 'AO' | null;
+type Country = 'BR' | 'PT' | 'MZ' | 'AO' | 'OTHER' | null;
 
 interface CheckoutState {
   isOpen: boolean;

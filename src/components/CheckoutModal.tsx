@@ -4,11 +4,13 @@ import { useCheckoutStore } from "@/store/checkoutStore";
 import { X, MapPin, BookOpen, CreditCard, Smartphone } from "lucide-react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useLenis } from "lenis/react";
 
 export default function CheckoutModal() {
   const { isOpen, selectedCountry, closeModal, setCountry } = useCheckoutStore();
   const modalRef = useRef<HTMLDivElement>(null);
   const backdropRef = useRef<HTMLDivElement>(null);
+  const lenis = useLenis();
 
   useEffect(() => {
     if (isOpen) {
@@ -30,17 +32,20 @@ export default function CheckoutModal() {
     }
   }, [isOpen]);
 
-  // Bloqueia scroll do body quando modal abre
+  // Bloqueia scroll do body e pausa o Lenis quando modal abre
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      if (lenis) lenis.stop();
     } else {
       document.body.style.overflow = "auto";
+      if (lenis) lenis.start();
     }
     return () => {
       document.body.style.overflow = "auto";
+      if (lenis) lenis.start();
     };
-  }, [isOpen]);
+  }, [isOpen, lenis]);
 
   const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === backdropRef.current) closeModal();
