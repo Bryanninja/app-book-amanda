@@ -68,7 +68,7 @@ export default function Testimony() {
         <h2 className="font-serif text-3xl md:text-4xl text-theme-brown mb-4 lg:mb-8 text-balance leading-tight">
           Onde o mundo via um fim, Cristo construía um recomeço.
         </h2>
-        <div className="space-y-4 lg:space-y-6 text-theme-brown/90 font-sans text-base lg:text-lg font-light leading-relaxed">
+        <div className="space-y-6 lg:space-y-8 text-theme-brown/90 font-sans text-lg lg:text-xl font-light leading-relaxed">
           <p>
             O diagnóstico de endometriose profunda e infertilidade soou como o fim de um sonho. Entre dores físicas incapacitantes e a sensação de falhar como mulher, me vi nas profundezas de um vale. Mas foi exatamente ali, quando os médicos diziam ser impossível, que o consolo de Cristo me encontrou.
           </p>

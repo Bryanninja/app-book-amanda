@@ -57,7 +57,7 @@ export default function TheBook() {
       <div className="relative z-10 mb-16 flex w-full justify-center md:mb-0 md:w-1/2">
         <div
           ref={bookRef}
-          className="relative h-[450px] w-[320px] md:h-[700px] md:w-[500px]"
+          className="relative h-[500px] w-[350px] md:h-[700px] md:w-[500px]"
         >
           {/* Sombra Dinâmica */}
           <div

@@ -3,7 +3,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { useCheckoutStore } from '@/store/checkoutStore';
-import { MoveRight } from 'lucide-react';
+import { MoveRight, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -143,7 +143,7 @@ export default function Hero() {
 
         <p
           ref={subtitleRef}
-          className="text-theme-brown/80 mx-auto mt-6 md:mt-8 max-w-2xl font-sans text-lg md:text-2xl leading-relaxed font-light"
+          className="text-theme-brown/80 mx-auto mt-6 max-w-2xl font-sans text-lg leading-relaxed font-light text-pretty md:mt-8 md:text-2xl"
         >
           Uma jornada real de cura da alma, vitória sobre a infertilidade e o
           chamado improvável para a África.
@@ -159,6 +159,11 @@ export default function Hero() {
             <MoveRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
+      </div>
+
+      {/* Indicador de Scroll Sutil */}
+      <div className="pointer-events-none absolute bottom-6 left-1/2 z-10 -translate-x-1/2 animate-bounce opacity-40 md:bottom-10">
+        <ChevronDown className="text-theme-brown h-10 w-10" />
       </div>
     </section>
   );
