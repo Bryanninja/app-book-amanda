@@ -1,12 +1,13 @@
+import Image from "next/image";
+
 export default function Gallery() {
-  // Array de placeholders que serão substituídos pelas fotos reais.
-  // A Amanda mandou várias fotos (Batismo, África, Moisés, Clara, Casamento).
   const photos = [
-    { src: "/gallery-1.jpg", alt: "Batismo nas águas" },
-    { src: "/gallery-2.jpg", alt: "Família em Moçambique" },
-    { src: "/gallery-3.jpg", alt: "O nascimento de Clara" },
-    { src: "/gallery-4.jpg", alt: "O Casamento com Michel" },
-    { src: "/gallery-5.jpg", alt: "Moisés na infância" },
+    { src: "/photos/batismo-mocambique.webp", alt: "Batismo nas águas em Moçambique" },
+    { src: "/photos/casamento-michel.webp", alt: "Casamento com Michel" },
+    { src: "/photos/bebe-clara.webp", alt: "O nascimento de Clara" },
+    { src: "/photos/moises-cachorros.webp", alt: "Moisés na infância" },
+    { src: "/photos/table-mountain-topo.webp", alt: "Família no topo da Table Mountain" },
+    { src: "/photos/familia-grama.webp", alt: "A família reunida na grama" },
   ];
 
   return (
@@ -17,9 +18,9 @@ export default function Gallery() {
           <h2 className="font-serif text-4xl md:text-5xl text-theme-brown mb-6">
             O milagre que os olhos puderam ver
           </h2>
-          <p className="text-xl font-light font-sans text-theme-brown/70 max-w-2xl mx-auto">
-            Da dor do diagnóstico à alegria do batismo em terras moçambicanas.
-          </p>
+          <p className="text-theme-brown/70 text-lg font-light">
+          A restituição da família, as promessas cumpridas e a alegria de viver uma nova história.
+        </p>
         </div>
 
         {/* CSS Masonry-like Grid Simples */}
@@ -30,10 +31,12 @@ export default function Gallery() {
               className="break-inside-avoid rounded-2xl overflow-hidden shadow-lg border border-theme-brown/5 group"
             >
               <div className="relative w-full aspect-square bg-neutral-100">
-                <img 
+                <Image 
                   src={photo.src} 
                   alt={photo.alt} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>

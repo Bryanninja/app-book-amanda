@@ -95,14 +95,14 @@ export default function Hero() {
         >
           <source src="/videos/amanda-book-hero.mp4" type="video/mp4" />
         </video>
-        {/* Overlay véu branco (bg-white/70) para dar leitura */}
-        <div className="absolute inset-0 bg-white/70 backdrop-blur-[2px]" />
+        {/* Véu branco sobre o vídeo para garantir legibilidade*/}
+        <div className="absolute inset-0 z-0 bg-white/70 mix-blend-normal backdrop-blur-[2px]" />
       </div>
 
       <div className="relative z-10 max-w-4xl pt-12">
         <h1
           ref={headlineRef}
-          className="text-theme-brown flex flex-col font-serif text-5xl leading-[1.1] font-medium tracking-tight text-balance md:text-7xl lg:text-8xl"
+          className="text-theme-brown flex flex-col font-serif text-4xl leading-[1.1] font-medium tracking-tight text-balance md:text-6xl lg:text-7xl"
         >
           <div className="overflow-hidden pb-2">
             <div className="mask-reveal inline-block">
@@ -115,7 +115,9 @@ export default function Hero() {
               <span className="inline-block">é</span>
             </div>{' '}
             <div className="mask-reveal text-theme-salmon inline-block">
-              <span className="inline-block pr-2 italic">amada</span>
+              <span className="inline-block pr-2 italic drop-shadow-[0_0_8px_rgba(255,255,255,1)]">
+                amada
+              </span>
             </div>
           </div>
           <div className="overflow-hidden pb-4">
@@ -132,14 +134,16 @@ export default function Hero() {
               <span className="inline-block">para</span>
             </div>{' '}
             <div className="mask-reveal text-theme-earth inline-block">
-              <span className="inline-block italic">fora.</span>
+              <span className="inline-block italic drop-shadow-[0_0_8px_rgba(255,255,255,1)]">
+                fora.
+              </span>
             </div>
           </div>
         </h1>
 
         <p
           ref={subtitleRef}
-          className="text-theme-brown/80 mx-auto mt-8 max-w-2xl font-sans text-xl leading-relaxed font-light md:text-2xl"
+          className="text-theme-brown/80 mx-auto mt-6 md:mt-8 max-w-2xl font-sans text-lg md:text-2xl leading-relaxed font-light"
         >
           Uma jornada real de cura da alma, vitória sobre a infertilidade e o
           chamado improvável para a África.
