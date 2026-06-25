@@ -135,17 +135,10 @@ export default function CheckoutModal() {
             {(selectedCountry === "MZ" || selectedCountry === "AO") && (
               <div className="flex flex-col gap-3">
                 <OptionButton
-                  icon={<CreditCard />}
-                  title="Comprar com Cartão"
-                  subtitle="Download Imediato"
-                  href="#"
-                />
-                <OptionButton
                   icon={<Smartphone />}
-                  title="Transferência / M-Pesa"
-                  subtitle="Pix/M-Pesa (Atendimento WhatsApp)"
+                  title="Comprar E-book"
+                  subtitle="Atendimento via WhatsApp (Pix/M-Pesa/Emola)"
                   href="#"
-                  variant="outline"
                 />
               </div>
             )}
