@@ -84,7 +84,7 @@ export default function TheBook() {
         <h2 className="text-theme-brown mb-6 font-serif text-4xl text-balance md:text-5xl">
           Sua jornada para a cura começa aqui.
         </h2>
-        <p className="text-theme-brown/70 mb-10 font-sans text-xl leading-relaxed font-light">
+        <p className="text-theme-brown/80 mb-10 font-sans text-xl leading-relaxed font-light">
           Este não é apenas um livro, é um convite para você descobrir sua
           verdadeira identidade. Através do meu testemunho, quero que você saiba
           — sem depender dos seus sentimentos — que você é profundamente amada.

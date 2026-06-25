@@ -28,7 +28,7 @@ export default function Transformation() {
           <h2 className="font-serif text-4xl md:text-5xl text-theme-brown mb-6 text-balance">
             O que você vai encontrar neste livro
           </h2>
-          <p className="text-xl font-light font-sans text-theme-brown/80 max-w-2xl mx-auto">
+          <p className="text-xl font-light font-sans text-theme-brown/90 max-w-2xl mx-auto">
             Uma troca poderosa entre aquilo que o mundo exige de você e aquilo que o Pai já preparou para você.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Transformation() {
                   ].map((item, idx) => (
                     <li key={idx} className="flex gap-4 items-start opacity-85 transition-opacity duration-300 hover:opacity-100">
                       <span className="w-1.5 h-1.5 rounded-full bg-neutral-300 mt-2.5 flex-shrink-0" />
-                      <p className="text-theme-brown/80 font-sans text-lg font-light leading-relaxed">{item}</p>
+                      <p className="text-theme-brown/90 font-sans text-lg font-light leading-relaxed">{item}</p>
                     </li>
                   ))}
                 </ul>

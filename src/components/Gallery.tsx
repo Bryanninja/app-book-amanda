@@ -18,7 +18,7 @@ export default function Gallery() {
           <h2 className="font-serif text-4xl md:text-5xl text-theme-brown mb-6">
             O milagre que os olhos puderam ver
           </h2>
-          <p className="text-theme-brown/70 text-lg font-light">
+          <p className="text-theme-brown/80 text-lg font-light">
           A restituição da família, as promessas cumpridas e a alegria de viver uma nova história.
         </p>
         </div>

@@ -57,16 +57,16 @@ export default function Footer() {
           </button>
           
           <div className="flex gap-4">
-            <a href="/politica-de-privacidade" className="font-sans text-theme-base/40 text-sm hover:text-theme-salmon transition-colors">
+            <a href="/politica-de-privacidade" className="font-sans text-theme-base/60 text-sm hover:text-theme-salmon transition-colors">
               Política de Privacidade
             </a>
             <span className="text-theme-base/20">•</span>
-            <a href="/termos-de-uso" className="font-sans text-theme-base/40 text-sm hover:text-theme-salmon transition-colors">
+            <a href="/termos-de-uso" className="font-sans text-theme-base/60 text-sm hover:text-theme-salmon transition-colors">
               Termos de Uso
             </a>
           </div>
 
-          <p className="font-sans text-theme-base/40 text-sm">
+          <p className="font-sans text-theme-base/60 text-sm">
             © {new Date().getFullYear()} Amanda Sena. Todos os direitos reservados.
           </p>
         </div>
