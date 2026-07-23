@@ -5,12 +5,14 @@ import { X, MapPin, BookOpen, CreditCard, Smartphone } from "lucide-react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useLenis } from "lenis/react";
+import { getWhatsAppLink } from "@/utils/whatsapp";
 
 export default function CheckoutModal() {
   const { isOpen, selectedCountry, closeModal, setCountry } = useCheckoutStore();
   const modalRef = useRef<HTMLDivElement>(null);
   const backdropRef = useRef<HTMLDivElement>(null);
   const lenis = useLenis();
+  const whatsappLink = getWhatsAppLink("+55 11 98208-2667", "Olá, Amanda! Gostaria de comprar o livro físico Sou Amada em Pedro Leopoldo.");
 
   useEffect(() => {
     if (isOpen) {
@@ -89,7 +91,7 @@ export default function CheckoutModal() {
               icon={<Smartphone />}
               title="Pedro Leopoldo - MG"
               subtitle="Comprar via WhatsApp (Retirada ou Entrega local)"
-              href="#"
+              href={whatsappLink}
               variant="outline"
             />
           </div>
@@ -127,8 +129,8 @@ function OptionButton({
         {icon}
       </div>
       <div className="flex flex-col text-left">
-        <span className="font-semibold text-lg">{title}</span>
-        <span className={`text-sm ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
+        <span className="font-sans font-semibold text-lg">{title}</span>
+        <span className={`font-sans text-sm ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
           {subtitle}
         </span>
       </div>

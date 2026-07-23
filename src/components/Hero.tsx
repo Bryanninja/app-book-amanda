@@ -118,23 +118,29 @@ export default function Hero() {
         >
           <div className="overflow-hidden pb-2">
             <div className="mask-reveal inline-block">
-              <span className="inline-block">Saber</span>
+              <span className="inline-block">Descubra</span>
+            </div>{' '}
+            <div className="mask-reveal inline-block">
+              <span className="inline-block">a</span>
+            </div>{' '}
+            <div className="mask-reveal inline-block">
+              <span className="inline-block">verdade</span>
             </div>{' '}
             <div className="mask-reveal inline-block">
               <span className="inline-block">que</span>
             </div>{' '}
-            <div className="mask-reveal inline-block">
-              <span className="inline-block">é</span>
-            </div>{' '}
             <div className="mask-reveal text-theme-salmon inline-block">
               <span className="inline-block pr-2 italic drop-shadow-[0_0_8px_rgba(255,255,255,1)]">
-                amada
+                transforma
               </span>
             </div>
           </div>
           <div className="overflow-hidden pb-4">
             <div className="mask-reveal inline-block">
-              <span className="inline-block">transforma</span>
+              <span className="inline-block">a</span>
+            </div>{' '}
+            <div className="mask-reveal inline-block">
+              <span className="inline-block">mulher</span>
             </div>{' '}
             <div className="mask-reveal inline-block">
               <span className="inline-block">de</span>
@@ -169,10 +175,9 @@ export default function Hero() {
             Quero ler o Livro
             <MoveRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
-          <div className="mt-4 flex items-center gap-2 rounded-full bg-white/50 px-4 py-1.5 backdrop-blur-sm">
-            <span className="text-theme-salmon text-lg">✨</span>
-            <span className="text-sm text-theme-brown/80 font-medium">Frete Grátis para todo o Brasil (Mercado Livre)</span>
-          </div>
+          <p className="mt-4 font-sans text-sm font-medium tracking-wide text-theme-brown/70">
+            📦 Frete Grátis para todo o Brasil
+          </p>
         </div>
       </div>
 
