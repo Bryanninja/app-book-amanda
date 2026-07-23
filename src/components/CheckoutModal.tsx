@@ -83,7 +83,7 @@ export default function CheckoutModal() {
               icon={<BookOpen />}
               title="Todo o Brasil"
               subtitle="Comprar via Mercado Livre (Frete Grátis)"
-              href="#"
+              href="https://produto.mercadolivre.com.br/MLB-4926455775-livro-cristo-sou-amada-identidade-em-cristo-e-cura-para-mulheres-amanda-sena-stawicki-_JM"
             />
             <OptionButton
               icon={<Smartphone />}
