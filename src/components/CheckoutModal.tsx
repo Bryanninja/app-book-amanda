@@ -74,7 +74,7 @@ export default function CheckoutModal() {
           <h2 className="font-serif text-3xl text-theme-brown">
             Escolha a forma de entrega
           </h2>
-          <p className="mt-2 text-base text-neutral-500 font-sans">
+          <p className="mt-2 text-base text-neutral-500" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
             Selecione a opção que melhor atende à sua localização.
           </p>
         </div>
@@ -128,9 +128,9 @@ function OptionButton({
       <div className={variant === "primary" ? "text-theme-salmon-light" : "text-theme-brown"}>
         {icon}
       </div>
-      <div className="flex flex-col text-left">
-        <span className="font-sans font-semibold text-lg">{title}</span>
-        <span className={`font-sans text-sm ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
+      <div className="flex flex-col text-left" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+        <span className="font-semibold text-lg">{title}</span>
+        <span className={`text-sm ${variant === "primary" ? "text-neutral-300" : "text-neutral-500"}`}>
           {subtitle}
         </span>
       </div>
