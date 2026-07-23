@@ -129,6 +129,9 @@ export default function TheBook() {
           Quero ler o Livro
           <MoveRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
+        <p className="mt-4 font-sans text-sm font-medium tracking-wide text-theme-brown/70">
+          📦 Frete Grátis para todo o Brasil
+        </p>
       </div>
     </section>
   );

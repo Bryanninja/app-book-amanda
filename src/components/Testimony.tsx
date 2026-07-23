@@ -29,7 +29,7 @@ export default function Testimony() {
         },
       });
 
-      // O pino foi substituído por position: sticky no CSS para evitar bugs de transbordo em telas pequenas
+      // O layout agora flui naturalmente (sem sticky) para acomodar textos maiores em qualquer tela
 
       // Efeito Parallax suave nas imagens (fade up)
       const images = gsap.utils.toArray('.testimony-image');
@@ -58,12 +58,12 @@ export default function Testimony() {
   return (
     <section
       ref={containerRef}
-      className="relative flex flex-col items-start justify-between px-6 py-12 transition-colors duration-1000 ease-in-out md:min-h-[300vh] md:flex-row md:px-16 lg:py-24"
+      className="relative flex flex-col items-start justify-between px-6 py-12 transition-colors duration-1000 ease-in-out md:px-16 lg:flex-row lg:py-24"
     >
       {/* Lado Esquerdo - Texto Fixo (Sticky) apenas no Desktop */}
       <div
         ref={textContentRef}
-        className="mb-16 flex h-auto w-full flex-col justify-center md:sticky md:top-24 md:mb-0 md:h-[calc(100vh-192px)] md:w-1/2 md:pr-8 lg:pr-16"
+        className="mb-16 flex h-auto w-full flex-col justify-center lg:mb-0 lg:w-1/2 lg:pr-16"
       >
         <span className="text-theme-earth mb-2 font-sans text-sm tracking-widest uppercase lg:mb-4">
           A Dor e o Vale
@@ -108,7 +108,7 @@ export default function Testimony() {
       {/* Lado Direito - Imagens com Scroll */}
       <div
         ref={imagesContainerRef}
-        className="flex w-full flex-col gap-16 md:w-1/2 md:gap-32 md:pt-32 md:pb-[50vh]"
+        className="flex w-full flex-col gap-16 lg:w-1/2 lg:gap-32 lg:pt-24"
       >
         {/* Imagem 1: A Dor / Busca */}
         <div className="testimony-image border-theme-brown/10 relative aspect-[3/4] w-full overflow-hidden rounded-2xl border-[0.5px] shadow-2xl">
