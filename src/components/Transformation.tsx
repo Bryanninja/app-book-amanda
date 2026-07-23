@@ -29,7 +29,7 @@ export default function Transformation() {
             O que você vai encontrar neste livro
           </h2>
           <p className="text-xl font-light font-sans text-theme-brown/90 max-w-2xl mx-auto">
-            Uma troca poderosa entre aquilo que o mundo exige de você e aquilo que o Pai já preparou para você.
+            Uma jornada real, fundamentada na Palavra de Deus, para abandonar as mentiras que as circunstâncias contam sobre você e descobrir a verdade que Cristo revela sobre quem você realmente é.
           </p>
         </div>
 
@@ -46,10 +46,11 @@ export default function Transformation() {
 
                 <ul className="space-y-6">
                   {[
-                    "Pressão para ser uma mulher endurecida e de alta performance.",
-                    "Sentimento de vergonha e culpa por erros no casamento ou na maternidade.",
-                    "Diagnósticos médicos implacáveis, dores físicas severas e infertilidade.",
-                    "O medo do desconhecido e a exaustão diante de grandes mudanças de vida.",
+                    "Acreditar que suas circunstâncias definem quem você é.",
+                    "Carregar culpa, vergonha e feridas que parecem impossíveis de superar.",
+                    "Viver marcada por diagnósticos, dores físicas, infertilidade ou longos períodos de espera.",
+                    "Buscar seu valor na performance, na aprovação dos outros ou nas conquistas.",
+                    "Enxergar o futuro com medo, insegurança e sem esperança.",
                   ].map((item, idx) => (
                     <li key={idx} className="flex gap-4 items-start opacity-85 transition-opacity duration-300 hover:opacity-100">
                       <span className="w-1.5 h-1.5 rounded-full bg-neutral-300 mt-2.5 flex-shrink-0" />
@@ -75,10 +76,11 @@ export default function Transformation() {
 
               <ul className="space-y-6">
                 {[
-                  "Descanso na identidade de filha amada e o resgate da leveza feminina.",
-                  "A compreensão do perdão de Deus e a construção de um lar fundamentado em Cristo.",
-                  "O encontro com a paz de Deus no meio do vale e a manifestação de milagres.",
-                  "A confiança de que Deus prepara conexões divinas em lugares improváveis.",
+                  "Descobrir sua verdadeira identidade como filha profundamente amada por Deus.",
+                  "Encontrar restauração para a alma e liberdade das feridas do passado.",
+                  "Aprender a viver pela fé, permanecendo firme em Cristo durante a espera e contemplando Aquele que continua realizando milagres.",
+                  "Aprender, pela Palavra de Deus, a contemplar Cristo acima das circunstâncias e permitir-se ser transformada por Ele.",
+                  "Experimentar uma vida transformada pela verdade que renova o coração de dentro para fora.",
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-4 items-start">
                     <span className="w-1.5 h-1.5 rounded-full bg-theme-salmon mt-2.5 flex-shrink-0 shadow-sm" />

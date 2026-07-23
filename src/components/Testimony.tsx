@@ -66,21 +66,24 @@ export default function Testimony() {
           A Dor e o Vale
         </span>
         <h2 className="font-serif text-3xl md:text-4xl text-theme-brown mb-4 lg:mb-8 text-balance leading-tight">
-          Onde o mundo via um fim, Cristo construía um recomeço.
+          Será que as circunstâncias podem definir quem você é?
         </h2>
         <div className="space-y-6 lg:space-y-8 text-theme-brown/90 font-sans text-lg lg:text-xl font-light leading-relaxed">
           <p>
-            O diagnóstico de endometriose profunda e infertilidade soou como o fim de um sonho. Entre dores físicas incapacitantes e a sensação de falhar como mulher, me vi nas profundezas de um vale. Mas foi exatamente ali, quando os médicos diziam ser impossível, que o consolo de Cristo me encontrou.
+            Se a dor, um diagnóstico, um coração vazio, uma longa espera, feridas na alma ou qualquer outra circunstância fizeram você deixar de enxergar quem realmente é, este livro é para você.
           </p>
           <div className="w-12 h-px bg-theme-earth/30 my-4" />
-          <span className="text-theme-earth font-sans text-sm tracking-widest uppercase mb-2 block">
-            O Milagre e a África
-          </span>
           <p>
-            Deus me lembrou das orações de menina: <strong>'Ela já tem nome'</strong>, o Senhor me disse. Clara nasceu como um milagre. E enquanto eu ainda celebrava a vida no meu ventre, fomos chamados a atravessar o oceano rumo a Moçambique.
+            Durante anos, minha identidade foi marcada por feridas profundas, infertilidade, endometriose e longos processos de espera. Mas Deus me conduziu por uma jornada que transformou completamente a minha vida.
           </p>
           <p>
-            Na África, em meio à força das mulheres moçambicanas e uma comunhão profunda, o Senhor restaurou não só o meu corpo, mas a minha verdadeira feminilidade em Cristo.
+            Primeiro, revelou a profundidade do Seu amor e quem eu realmente sou em Cristo, restaurando a minha alma. Dessa revelação nasceram os milagres: Jesus venceu a infertilidade em meu ventre, conduziu minha família ao improvável chamado na África e manifestou Sua cura sobre a endometriose.
+          </p>
+          <p>
+            Neste livro, compartilho essa jornada por meio dos meus testemunhos e de estudos fundamentados na Palavra de Deus, revelando como essa verdade foi vivida em minha própria história. Em cada capítulo, caminharemos juntas para conhecer mais profundamente a Cristo e descobrir quem você realmente é.
+          </p>
+          <p className="font-medium italic">
+            Minha oração é que, ao terminar esta leitura, você descubra, com o coração, a verdade que transforma mulheres de dentro para fora.
           </p>
         </div>
       </div>

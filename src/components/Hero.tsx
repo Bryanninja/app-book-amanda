@@ -157,11 +157,10 @@ export default function Hero() {
           ref={subtitleRef}
           className="text-theme-brown/80 mx-auto mt-6 max-w-2xl font-sans text-lg leading-relaxed font-light text-pretty md:mt-8 md:text-2xl"
         >
-          Uma jornada real de cura da alma, vitória sobre a infertilidade e o
-          chamado improvável para a África.
+          Uma jornada real de restauração da alma e identidade, vitória sobre a infertilidade, um chamado improvável para a África e cura da endometriose. Através do testemunho e de estudos fundamentados na Palavra de Deus.
         </p>
 
-        <div className="mt-14 flex justify-center p-4">
+        <div className="mt-14 flex flex-col items-center justify-center p-4">
           <button
             ref={buttonRef}
             onClick={openModal}
@@ -170,6 +169,10 @@ export default function Hero() {
             Quero ler o Livro
             <MoveRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
+          <div className="mt-4 flex items-center gap-2 rounded-full bg-white/50 px-4 py-1.5 backdrop-blur-sm">
+            <span className="text-theme-salmon text-lg">✨</span>
+            <span className="text-sm text-theme-brown/80 font-medium">Frete Grátis para todo o Brasil (Mercado Livre)</span>
+          </div>
         </div>
       </div>
 

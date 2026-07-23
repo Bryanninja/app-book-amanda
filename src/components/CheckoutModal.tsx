@@ -70,87 +70,30 @@ export default function CheckoutModal() {
 
         <div className="mb-8 text-center">
           <h2 className="font-serif text-3xl text-theme-brown">
-            {!selectedCountry ? "Onde você está?" : "Escolha a forma de entrega"}
+            Escolha a forma de entrega
           </h2>
           <p className="mt-2 text-base text-neutral-500 font-sans">
-            {!selectedCountry
-              ? "Selecione seu país para ver as opções disponíveis."
-              : "Opções personalizadas para sua região."}
+            Selecione a opção que melhor atende à sua localização.
           </p>
         </div>
 
-        {!selectedCountry ? (
-          <div className="grid grid-cols-1 gap-3">
-            {[
-              { id: "BR", name: "Brasil", flag: "🇧🇷" },
-              { id: "PT", name: "Portugal", flag: "🇵🇹" },
-              { id: "MZ", name: "Moçambique", flag: "🇲🇿" },
-              { id: "AO", name: "Angola", flag: "🇦🇴" },
-              { id: "OTHER", name: "Outros Países", flag: "🌍" },
-            ].map((country) => (
-              <button
-                key={country.id}
-                onClick={() => setCountry(country.id as any)}
-                className="flex items-center justify-between rounded-xl border border-neutral-200 bg-theme-base/50 p-4 transition-all hover:border-theme-salmon hover:bg-theme-salmon/10 active:scale-[0.98] cursor-pointer"
-              >
-                <div className="flex items-center gap-4">
-                  <span className="text-3xl">{country.flag}</span>
-                  <span className="font-medium text-theme-brown text-lg">{country.name}</span>
-                </div>
-                <MapPin className="h-5 w-5 text-neutral-300" />
-              </button>
-            ))}
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="flex flex-col gap-3">
+            <OptionButton
+              icon={<BookOpen />}
+              title="Todo o Brasil"
+              subtitle="Comprar via Mercado Livre (Frete Grátis)"
+              href="#"
+            />
+            <OptionButton
+              icon={<Smartphone />}
+              title="Pedro Leopoldo - MG"
+              subtitle="Comprar via WhatsApp (Retirada ou Entrega local)"
+              href="#"
+              variant="outline"
+            />
           </div>
-        ) : (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            {selectedCountry === "BR" && (
-              <div className="flex flex-col gap-3">
-                <OptionButton
-                  icon={<BookOpen />}
-                  title="Livro Físico"
-                  subtitle="Comprar via Mercado Livre"
-                  href="#"
-                />
-                <OptionButton
-                  icon={<Smartphone />}
-                  title="E-book Digital"
-                  subtitle="Comprar via Amazon"
-                  href="#"
-                  variant="outline"
-                />
-              </div>
-            )}
-
-            {(selectedCountry === "PT" || selectedCountry === "OTHER") && (
-              <div className="flex flex-col gap-3">
-                <OptionButton
-                  icon={<Smartphone />}
-                  title="E-book Digital"
-                  subtitle="Comprar via Amazon"
-                  href="#"
-                />
-              </div>
-            )}
-
-            {(selectedCountry === "MZ" || selectedCountry === "AO") && (
-              <div className="flex flex-col gap-3">
-                <OptionButton
-                  icon={<Smartphone />}
-                  title="Comprar E-book"
-                  subtitle="Atendimento via WhatsApp (Pix/M-Pesa/Emola)"
-                  href="#"
-                />
-              </div>
-            )}
-
-            <button
-              onClick={() => setCountry(null)}
-              className="mt-6 w-full text-center text-sm font-medium text-neutral-400 hover:text-theme-brown transition-colors cursor-pointer"
-            >
-              ← Voltar para seleção de país
-            </button>
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );

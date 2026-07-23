@@ -5,20 +5,36 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "Como funciona a entrega do livro físico na África?",
-    answer: "Atualmente, o livro físico é entregue via Mercado Livre no Brasil. Para Angola e Moçambique, recomendamos a versão E-book, que pode ser baixada imediatamente após a confirmação do pagamento via Cartão ou M-Pesa."
+    question: "Como funciona a entrega do livro?",
+    answer: "O livro físico está disponível para todo o Brasil e é enviado com frete grátis por meio do Mercado Livre, oferecendo praticidade e segurança na sua compra. Se você mora em Pedro Leopoldo (MG), também pode adquirir o livro diretamente pelo WhatsApp, com retirada ou entrega local, conforme disponibilidade. Em breve, o E-book estará disponível na Amazon para leitores do Brasil, Portugal, Angola e África do Sul. Também disponibilizaremos a compra do E-book para Moçambique por meio desta página."
+  },
+  {
+    question: "O frete é grátis?",
+    answer: "Sim! O livro Sou Amada possui frete grátis para todo o Brasil nas compras realizadas pelo Mercado Livre. Assim, você recebe o seu exemplar no conforto da sua casa, sem custo adicional de envio."
   },
   {
     question: "O pagamento é seguro?",
-    answer: "Totalmente seguro! Utilizamos a Amazon e o Mercado Livre para o Brasil e Portugal. Para África, usamos plataformas parceiras com certificação de segurança internacional."
+    answer: "Sim! As compras realizadas pelo Mercado Livre utilizam a plataforma de pagamento segura da própria empresa, garantindo proteção durante todo o processo. Para compras realizadas pelo WhatsApp em Pedro Leopoldo (MG), o pagamento é combinado diretamente durante o atendimento."
   },
   {
-    question: "Como faço para comprar via M-Pesa ou transferência?",
-    answer: "Basta clicar em 'Quero ler o Livro', selecionar seu país e clicar na opção 'Transferência / M-Pesa'. Você será direcionado para o nosso WhatsApp, onde uma pessoa da equipe fará o envio do E-book na mesma hora."
+    question: "Como comprar em Pedro Leopoldo (MG)?",
+    answer: "Se você mora em Pedro Leopoldo (MG), basta clicar em 'Quero ler o Livro' e escolher a opção WhatsApp. Nossa equipe entrará em contato para orientar a compra, informar as formas de pagamento e combinar a entrega ou retirada do seu exemplar. Para as demais cidades do Brasil, a compra é realizada pelo Mercado Livre, com frete grátis."
   },
   {
     question: "Posso ler o E-book no celular?",
-    answer: "Sim! O formato do E-book é compatível com qualquer celular, tablet ou computador. Você pode ler a qualquer momento."
+    answer: "Sim! Em breve, o E-book estará disponível na Amazon e poderá ser lido em celulares, tablets, computadores e dispositivos Kindle por meio do aplicativo Kindle. O lançamento será realizado inicialmente para Brasil, Portugal, Angola e África do Sul. Em seguida, também disponibilizaremos o E-book para Moçambique por meio desta página."
+  },
+  {
+    question: "Qual é o prazo de entrega?",
+    answer: "Os pedidos realizados pelo Mercado Livre seguem o prazo informado pela própria plataforma no momento da compra, variando de acordo com a região de entrega. Em Pedro Leopoldo (MG), a entrega ou retirada será combinada diretamente pelo WhatsApp."
+  },
+  {
+    question: "O livro possui versão digital?",
+    answer: "Ainda não. Neste momento, está disponível apenas o livro físico. Em breve, o E-book será lançado na Amazon para leitores do Brasil, Portugal, Angola e África do Sul. Posteriormente, também estará disponível para Moçambique por meio desta página."
+  },
+  {
+    question: "O livro é apenas para mulheres que enfrentam infertilidade ou endometriose?",
+    answer: "Não. Embora eu compartilhe minha caminhada de restauração da alma, vitória sobre a infertilidade, cura da endometriose e o chamado missionário para a África, o Sou Amada foi escrito para toda mulher que deseja conhecer mais profundamente a Cristo, descobrir sua verdadeira identidade e ser transformada pela verdade da Palavra de Deus."
   }
 ];
 

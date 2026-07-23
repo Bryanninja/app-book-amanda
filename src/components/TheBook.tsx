@@ -82,21 +82,26 @@ export default function TheBook() {
           O Livro
         </span>
         <h2 className="text-theme-brown mb-6 font-serif text-4xl text-balance md:text-5xl">
-          Sua jornada para a cura começa aqui.
+          Uma jornada para descobrir quem você realmente é.
         </h2>
-        <p className="text-theme-brown/80 mb-10 font-sans text-xl leading-relaxed font-light">
-          Este não é apenas um livro, é um convite para você descobrir sua
-          verdadeira identidade. Através do meu testemunho, quero que você saiba
-          — sem depender dos seus sentimentos — que você é profundamente amada.
-        </p>
+        <div className="text-theme-brown/80 mb-10 space-y-4 font-sans text-xl leading-relaxed font-light">
+          <p>
+            Neste livro, compartilho a jornada que Deus escreveu para a minha vida. Primeiro, restaurou a minha alma ao revelar a profundidade do Seu amor e a minha verdadeira identidade em Cristo. Dessa revelação nasceu uma nova forma de viver. Jesus venceu a infertilidade em meu ventre, conduziu a minha família a um lugar improvável, a África e, naquele lugar resgatou a minha família e manifestou Sua cura sobre a endometriose.
+          </p>
+          <p>
+            Ao longo destas páginas, você encontrará testemunhos reais entrelaçados com estudos fundamentados na Palavra de Deus, que conduzem a um encontro mais profundo com Cristo e à descoberta da verdade que transforma mulheres de dentro para fora.
+          </p>
+          <p>
+            Minha oração é que, ao final desta leitura, você também conheça mais profundamente o amor de Deus, encontre descanso na sua identidade de filha amada e contemple Aquele que continua restaurando vidas, realizando milagres e escrevendo novas histórias.
+          </p>
+        </div>
 
         <div className="bg-theme-salmon/10 border-theme-salmon mb-12 rounded-r-2xl border-l-4 p-6">
           <span className="text-theme-brown mb-2 block font-sans font-semibold">
             Para quem é este livro?
           </span>
           <p className="text-theme-brown/80 font-sans text-lg leading-relaxed font-light">
-            Mulheres maduras, mães, tentantes ou que sofreram com a dor da
-            inferioridade e precisam resgatar sua identidade de filha amada.
+            Para toda mulher que deseja conhecer mais profundamente a Cristo e descobrir quem realmente é n’Ele. Se você carrega feridas na alma, está vivendo longe da sua identidade, enfrenta um tempo de espera, luta contra a infertilidade, endometriose, ou uma outra enfermidade, a culpa, o medo ou qualquer circunstância que tenta definir quem você é, este livro foi escrito para você.
           </p>
         </div>
 

@@ -32,26 +32,20 @@ export default function AboutAuthor() {
             A Autora
           </span>
           <h2 className="text-theme-brown mb-8 font-serif text-4xl leading-tight md:text-5xl lg:text-6xl">
-            Prazer, Amanda Sena.
+            Prazer, sou Amanda Sena Stawicki.
           </h2>
           <div className="text-theme-brown/80 space-y-6 font-sans text-xl leading-relaxed font-light">
             <p>
-              Sou arquiteta por formação, mas foi nos caminhos da vida,
-              enfrentando o luto profundo pela perda do meu pai biológico aos
-              oito anos de idade, e depois a intensa luta contra a endometriose,
-              que descobri a minha verdadeira vocação: ser uma filha amada.
+              Assim como você, sou uma mulher real.
             </p>
             <p>
-              Construí minha família ao lado do Michel, o amor da minha vida, e
-              vi o milagre de Deus nascer no ventre quando geramos Clara,
-              cumprindo uma promessa feita quando eu ainda era jovem.
+              Sou esposa, mãe, arquiteta, mineira, missionária na África do Sul e, acima de tudo, uma filha amada por Deus. Ao longo da minha caminhada com Cristo no Brasil e na África, vivi profundos processos de restauração da alma, enfrentei a infertilidade e a endometriose. Entre lágrimas, consolo, alegrias, recomeços e milagres, descobri uma verdade que transformou a minha vida, a minha casa e a forma como vejo a mim mesma: Sou Amada.
             </p>
             <p>
-              Hoje, além de esposa e mãe, dedico meus dias a levar uma mensagem
-              de restauração para mulheres que, assim como eu, um dia
-              acreditaram nas mentiras que o mundo conta sobre a feminilidade, e
-              precisam ser lembradas de que o amor de Cristo é o único lugar
-              seguro para descansar.
+              E foi a partir desse amor que encontrei cura, restauração e uma identidade firmada em Cristo.
+            </p>
+            <p>
+              Hoje, caminho pela fé ao lado da minha família, compartilho a vida real de uma mulher comum e dedico meu trabalho a ajudar outras mulheres a descobrirem essa mesma verdade.
             </p>
           </div>
 
