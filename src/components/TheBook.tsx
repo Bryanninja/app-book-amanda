@@ -67,7 +67,7 @@ export default function TheBook() {
 
           <div className="absolute inset-0">
             <Image
-              src="/photos/mockup-book-amada.webp"
+              src="/photos/book-amanda-view.webp"
               alt="Livro Sou Amada"
               fill
               sizes="(max-width: 768px) 320px, 500px"
@@ -86,13 +86,25 @@ export default function TheBook() {
         </h2>
         <div className="text-theme-brown/80 mb-10 space-y-4 font-sans text-xl leading-relaxed font-light">
           <p>
-            Neste livro, compartilho a jornada que Deus escreveu para a minha vida. Primeiro, restaurou a minha alma ao revelar a profundidade do Seu amor e a minha verdadeira identidade em Cristo. Dessa revelação nasceu uma nova forma de viver. Jesus venceu a infertilidade em meu ventre, conduziu a minha família a um lugar improvável, a África e, naquele lugar resgatou a minha família e manifestou Sua cura sobre a endometriose.
+            Neste livro, compartilho a jornada que Deus escreveu para a minha
+            vida. Primeiro, restaurou a minha alma ao revelar a profundidade do
+            Seu amor e a minha verdadeira identidade em Cristo. Dessa revelação
+            nasceu uma nova forma de viver. Jesus venceu a infertilidade em meu
+            ventre, conduziu a minha família a um lugar improvável, a África e,
+            naquele lugar resgatou a minha família e manifestou Sua cura sobre a
+            endometriose.
           </p>
           <p>
-            Ao longo destas páginas, você encontrará testemunhos reais entrelaçados com estudos fundamentados na Palavra de Deus, que conduzem a um encontro mais profundo com Cristo e à descoberta da verdade que transforma mulheres de dentro para fora.
+            Ao longo destas páginas, você encontrará testemunhos reais
+            entrelaçados com estudos fundamentados na Palavra de Deus, que
+            conduzem a um encontro mais profundo com Cristo e à descoberta da
+            verdade que transforma mulheres de dentro para fora.
           </p>
           <p>
-            Minha oração é que, ao final desta leitura, você também conheça mais profundamente o amor de Deus, encontre descanso na sua identidade de filha amada e contemple Aquele que continua restaurando vidas, realizando milagres e escrevendo novas histórias.
+            Minha oração é que, ao final desta leitura, você também conheça mais
+            profundamente o amor de Deus, encontre descanso na sua identidade de
+            filha amada e contemple Aquele que continua restaurando vidas,
+            realizando milagres e escrevendo novas histórias.
           </p>
         </div>
 
@@ -101,7 +113,12 @@ export default function TheBook() {
             Para quem é este livro?
           </span>
           <p className="text-theme-brown/80 font-sans text-lg leading-relaxed font-light">
-            Para toda mulher que deseja conhecer mais profundamente a Cristo e descobrir quem realmente é n’Ele. Se você carrega feridas na alma, está vivendo longe da sua identidade, enfrenta um tempo de espera, luta contra a infertilidade, endometriose, ou uma outra enfermidade, a culpa, o medo ou qualquer circunstância que tenta definir quem você é, este livro foi escrito para você.
+            Para toda mulher que deseja conhecer mais profundamente a Cristo e
+            descobrir quem realmente é n’Ele. Se você carrega feridas na alma,
+            está vivendo longe da sua identidade, enfrenta um tempo de espera,
+            luta contra a infertilidade, endometriose, ou uma outra enfermidade,
+            a culpa, o medo ou qualquer circunstância que tenta definir quem
+            você é, este livro foi escrito para você.
           </p>
         </div>
 
