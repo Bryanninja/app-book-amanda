@@ -1,7 +1,7 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://souamada.com.br' // Trocar pela URL final
+  const baseUrl = 'https://souamada.com'; // Trocar pela URL final
 
   return [
     {
@@ -22,5 +22,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
-  ]
+  ];
 }

@@ -1,7 +1,7 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://souamada.com.br'
+  const baseUrl = 'https://souamada.com';
 
   return {
     rules: {
@@ -9,5 +9,5 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
     },
     sitemap: `${baseUrl}/sitemap.xml`,
-  }
+  };
 }
