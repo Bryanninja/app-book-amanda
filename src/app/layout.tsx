@@ -14,9 +14,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Sou Amada | Amanda Sena',
+  title: 'Livro Sou Amada – Amanda Sena',
   description:
-    'Descubra a verdade que transforma a mulher de dentro para fora. Uma jornada real de restauração da alma, vitória sobre a infertilidade, um chamado para a África e cura da endometriose.',
+    'Adquira seu exemplar com frete grátis para todo o Brasil ou retire em Pedro Leopoldo/MG. Descubra a Verdade que transforma a Mulher de dentro para fora.',
   keywords: [
     'Amanda Sena',
     'Sou Amada',
@@ -34,9 +34,9 @@ export const metadata = {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: 'Sou Amada | Amanda Sena',
+    title: 'Livro Sou Amada – Amanda Sena',
     description:
-      'Descubra a verdade que transforma a mulher de dentro para fora. Uma jornada real de restauração da alma, vitória sobre a infertilidade, um chamado para a África e cura da endometriose.',
+      'Adquira seu exemplar com frete grátis para todo o Brasil ou retire em Pedro Leopoldo/MG. Descubra a Verdade que transforma a Mulher de dentro para fora.',
     url: 'https://souamada.com',
     siteName: 'Sou Amada - Livro',
     images: [
@@ -52,8 +52,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sou Amada | Amanda Sena',
-    description: 'Descubra a verdade que transforma a mulher de dentro para fora.',
+    title: 'Livro Sou Amada – Amanda Sena',
+    description: 'Adquira seu exemplar com frete grátis para todo o Brasil ou retire em Pedro Leopoldo/MG. Descubra a Verdade que transforma a Mulher de dentro para fora.',
   },
   robots: {
     index: true,
