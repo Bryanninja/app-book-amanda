@@ -129,9 +129,14 @@ export default function TheBook() {
           Quero ler o Livro
           <MoveRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
-        <p className="mt-4 font-sans text-sm font-medium tracking-wide text-theme-brown/70">
-          📦 Frete Grátis para todo o Brasil
-        </p>
+        <div className="mt-6 flex flex-col items-center md:items-start text-center md:text-left space-y-1">
+          <p className="font-serif text-lg font-semibold text-theme-brown">
+            Livro Sou Amada – Amanda Sena
+          </p>
+          <p className="font-sans text-sm font-medium tracking-wide text-theme-brown/80 max-w-sm">
+            Adquira seu exemplar com frete grátis para todo o Brasil ou retire em Pedro Leopoldo/MG.
+          </p>
+        </div>
       </div>
     </section>
   );
