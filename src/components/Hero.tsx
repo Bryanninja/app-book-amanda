@@ -17,7 +17,7 @@ export default function Hero() {
     // Força o vídeo a tocar no mobile (safari/ios) ignorando bugs de autoplay
     if (videoRef.current) {
       videoRef.current.play().catch(() => {
-        console.log("Autoplay blocked by browser (Low Power Mode).");
+        console.log('Autoplay blocked by browser (Low Power Mode).');
       });
     }
   }, []);
@@ -103,7 +103,7 @@ export default function Hero() {
           muted
           playsInline
           poster="/photos/amanda-arch.webp"
-          className="h-full w-full object-cover opacity-80"
+          className="h-full w-full object-cover object-top opacity-80"
         >
           <source src="/videos/amanda-book-hero.mp4" type="video/mp4" />
         </video>
@@ -163,7 +163,10 @@ export default function Hero() {
           ref={subtitleRef}
           className="text-theme-brown/80 mx-auto mt-6 max-w-2xl font-sans text-lg leading-relaxed font-light text-pretty md:mt-8 md:text-2xl"
         >
-          Uma jornada real de restauração da alma e identidade, vitória sobre a infertilidade, um chamado improvável para a África e cura da endometriose. Através do testemunho e de estudos fundamentados na Palavra de Deus.
+          Uma jornada real de restauração da alma e identidade, vitória sobre a
+          infertilidade, um chamado improvável para a África e cura da
+          endometriose. Através do testemunho e de estudos fundamentados na
+          Palavra de Deus.
         </p>
 
         <div className="mt-14 flex flex-col items-center justify-center p-4">
@@ -175,7 +178,7 @@ export default function Hero() {
             Quero ler o Livro
             <MoveRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
-          <p className="mt-4 font-sans text-sm font-medium tracking-wide text-theme-brown/70">
+          <p className="text-theme-brown/70 mt-4 font-sans text-sm font-medium tracking-wide">
             📦 Frete Grátis para todo o Brasil
           </p>
         </div>
