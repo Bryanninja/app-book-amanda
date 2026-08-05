@@ -163,10 +163,7 @@ export default function Hero() {
           ref={subtitleRef}
           className="text-theme-brown/80 mx-auto mt-6 max-w-2xl font-sans text-lg leading-relaxed font-light text-pretty md:mt-8 md:text-2xl"
         >
-          Uma jornada real de restauração da alma e identidade, vitória sobre a
-          infertilidade, um chamado improvável para a África e cura da
-          endometriose. Através do testemunho e de estudos fundamentados na
-          Palavra de Deus.
+          Viva a transformação em Cristo que restaurou minha identidade e transformou a minha história, restaurando minha família, conduzindo-me à vitória sobre a infertilidade, à cura da endometriose, em uma jornada do Brasil à África.
         </p>
 
         <div className="mt-14 flex flex-col items-center justify-center p-4">
@@ -175,11 +172,11 @@ export default function Hero() {
             onClick={openModal}
             className="group bg-theme-brown text-theme-base shadow-theme-brown/20 hover:bg-theme-brown/90 flex cursor-pointer items-center gap-3 rounded-full px-8 py-5 text-xl font-medium shadow-xl transition-colors"
           >
-            Quero ler o Livro
+            Comprar o Sou Amada
             <MoveRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
           <p className="text-theme-brown/70 mt-4 font-sans text-sm font-medium tracking-wide">
-            📦 Frete Grátis para todo o Brasil
+            📦 Com frete grátis para todo o Brasil.
           </p>
         </div>
       </div>

@@ -83,14 +83,14 @@ export default function CheckoutModal() {
           <div className="flex flex-col gap-3">
             <OptionButton
               icon={<BookOpen />}
-              title="Todo o Brasil"
-              subtitle="Comprar via Mercado Livre (Frete Grátis)"
+              title="Receber com frete grátis"
+              subtitle="Entrega pelo Mercado Livre."
               href="https://produto.mercadolivre.com.br/MLB-4926455775-livro-cristo-sou-amada-identidade-em-cristo-e-cura-para-mulheres-amanda-sena-stawicki-_JM"
             />
             <OptionButton
               icon={<Smartphone />}
-              title="Pedro Leopoldo - MG"
-              subtitle="Comprar via WhatsApp (Retirada ou Entrega local)"
+              title="Retirar em Pedro Leopoldo/MG"
+              subtitle="Agende sua retirada pelo WhatsApp."
               href={whatsappLink}
               variant="outline"
             />

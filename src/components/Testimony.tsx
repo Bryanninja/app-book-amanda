@@ -119,7 +119,7 @@ export default function Testimony() {
             fill
             quality={100}
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover contrast-[1.05] saturate-[0.85] sepia-[.15]"
+            className="object-cover object-[center_30%] contrast-[1.05] saturate-[0.85] sepia-[.15]"
           />
           <div className="from-theme-brown/60 absolute inset-0 flex items-end bg-gradient-to-t to-transparent p-8">
             <p className="text-theme-base font-serif text-2xl tracking-wide italic">
@@ -136,7 +136,7 @@ export default function Testimony() {
             alt="Restauração"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover contrast-[1.05] saturate-[0.85] sepia-[.15]"
+            className="object-cover object-[center_20%] contrast-[1.05] saturate-[0.85] sepia-[.15]"
           />
           <div className="bg-theme-brown/20 absolute inset-0 flex items-center justify-center p-8 text-center">
             <p className="text-theme-base font-serif text-2xl italic drop-shadow-md">
@@ -153,7 +153,7 @@ export default function Testimony() {
             alt="A África"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover contrast-[1.05] saturate-[0.85] sepia-[.15]"
+            className="object-cover object-[center_20%] contrast-[1.05] saturate-[0.85] sepia-[.15]"
           />
           <div className="from-theme-brown/70 absolute inset-0 flex items-end bg-gradient-to-t to-transparent p-8">
             <p className="text-theme-base font-serif text-2xl tracking-wide italic">
